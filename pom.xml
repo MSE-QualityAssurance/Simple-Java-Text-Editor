@@ -41,6 +41,17 @@
     </dependencies>
     <build>
         <plugins>
+            <!-- Add the Visitors here to add extra verification -->  
+            <plugin>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-maven-plugin</artifactId>
+                <version>4.8.1.0</version>
+                <configuration>
+                <visitors>
+                
+                </visitors>
+                </configuration>
+            </plugin>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.10.1</version>
